@@ -25,15 +25,15 @@ public class Lambda {
 		EsPar p = (n) -> n % 2 == 0;
 		System.out.println(p.esPar(3));
 
+		Sumar s = (a, b) -> a + b;
+		System.out.println(s.sumar(5, 4));
+
 		ArrayList<String> lista = new ArrayList<>();
 		lista.add("Esteban");
 		lista.add("Puerto");
 		lista.add("Rojas");
 		lista.forEach((n) -> System.out.println(n));
 		lista.forEach(System.out::println);
-
-		Sumar s = (a, b) -> a + b;
-		System.out.println(s.sumar(5, 4));
 
 	}
 
