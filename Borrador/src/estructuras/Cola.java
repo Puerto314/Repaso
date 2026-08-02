@@ -1,14 +1,9 @@
-import java.io.BufferedReader;
+package estructuras;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Scanner;
-import java.util.Stack;
 
 public class Cola {
 

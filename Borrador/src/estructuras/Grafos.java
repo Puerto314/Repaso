@@ -1,3 +1,5 @@
+package estructuras;
+
 import java.util.*;
 
 public class Grafos {
@@ -32,7 +34,7 @@ public class Grafos {
 		agregarNodo(destino);
 
 		grafo.get(origen).add(destino);
-		grafo.get(destino).add(origen);
+//		grafo.get(destino).add(origen); //Para grafo dirigido
 
 	}
 
