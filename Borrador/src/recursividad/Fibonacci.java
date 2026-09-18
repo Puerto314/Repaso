@@ -13,20 +13,27 @@ public class Fibonacci {
 		System.out.print("N: ");
 		int n = Integer.parseInt(br.readLine());
 
-		calcularFibonacci(n, 0, 1);
+		System.out.println(calcularFibonacci(n));
 
 	}
 
-	public static void calcularFibonacci(int n, int a, int b) {
+//	public static void calcularFibonacci(int n, int a, int b) {
+//
+//		if (n == 0) {
+//			return;
+//		}
+//
+//		System.out.print(a + " ");
+//		calcularFibonacci(n - 1, b, a + b);
+//		return;
+//
+//	}
 
-		if (n == 0) {
-			return;
-		}
+	public static int calcularFibonacci(int n) {
+		if (n <= 1)
+			return n;
 
-		System.out.print(a + " ");
-		calcularFibonacci(n - 1, b, a + b);
-		return;
-
+		return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
 	}
 
 }
